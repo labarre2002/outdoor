@@ -1,0 +1,209 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    }
+    
+    *{
+        font-size: 16px;
+        font-family: verdana;
+    }
+    
+    body{
+        background: #3c468e;
+        height: 100vh;
+        border: 0 0 0 3px  red inset;
+    }
+    
+    .content{
+        position: relative;
+        width: 95vw;
+        height: 90vh;
+         margin: 15px auto;
+        border: 3px solid white;
+        border-radius: 9px;
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+    }
+    
+    
+    
+    
+    .entete{
+        display: flex;
+        position: relative;
+        justify-content: center;
+        flex-direction: row;
+        height:10%;
+        padding-top: 20px;
+        padding-bottom:20px;
+        border-radius: 7px  7px 0px 0px;
+      }
+
+    .entete::after{
+        content: "";
+        position: absolute;
+        width: 99%;
+        height: 2px;
+       bottom: -1px;
+        background: white;
+    }
+    
+    nav{
+        display: flex;
+        gap:23px;
+       
+    }
+    nav a{
+        line-height: 0;
+    }
+    
+    a{
+        color: white;
+        text-decoration: none;
+        text-transform:uppercase;
+        outline: none;
+        flex: 1 0 auto;
+    }
+    
+    
+    .title{
+        position: absolute;
+        left: 15px;
+        top: 10px;
+       }
+
+    .title h1{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    }
+    
+    .burger{
+    position:absolute;
+    top:16px;
+    right: 15px;
+    width: 30px;
+    height: 10px;
+    cursor: pointer;
+    }
+    
+    .burger::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height:2px;
+        background-color: white;
+        display: block;
+    }
+    
+    .burger::after{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height:2px;
+        background-color: white;
+        display: block;
+        transform: translateY(10px);
+    }
+    
+    .central{
+        height: 80%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        
+        position: relative;
+      
+    }
+    
+    .pic{
+      width:350px;
+      height:250px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform:translate(-50%,-35%) rotate(-5deg);
+      z-index:1;
+     }
+    
+    .pic img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      opacity: .9;
+      
+    }
+    
+
+    .text{
+       z-index:3;
+    }
+
+    .paragraphe{
+        z-index:3; 
+    }
+
+    .paragraphe p{
+        color: white;
+
+    }
+
+    
+
+    .first p{
+        color: white;
+        text-transform: uppercase;
+        font-size: 3em;
+        text-align: center;
+        letter-spacing: .3rem;
+    }
+    
+    .two p{
+        color: white;
+        text-transform: uppercase;
+        font-size: 3em;
+        letter-spacing: .3rem;
+    }
+    
+    .two span{
+        color: white;
+        text-transform: uppercase;
+        font-size: 1em;
+        font-style: italic;
+        font-family: times;
+        letter-spacing: .3rem;
+    }
+    .three p{
+        color: white;
+        text-transform: uppercase;
+        font-size: 3em;
+        letter-spacing: .3rem; 
+        text-align: center;
+    }
+
+
+
+
+    footer{
+        position: relative;
+        padding-top:.5em;
+        padding-bottom: .5em;
+        }
+
+   footer::before{
+        content: "";
+        position: absolute;
+        width: 99%;
+        height: 2px;
+        background: white;
+        top: -2px;
+        left: 5px;
+    }
+
+    footer p{
+        text-transform: uppercase;
+        text-align: center;
+        color: white;
+         }
